@@ -9,4 +9,5 @@
 ## Getting started
 
 - Open project folder and run `npm install`;
+- Run `node index.js`;
 - Run `npx lite-server`;
