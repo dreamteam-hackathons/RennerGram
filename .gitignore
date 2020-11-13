@@ -1,4 +1,4 @@
 node_modules/
 
-tmp/*
-!tmp/.gitkeep
+rennergram/tmp/*
+!rennergram/tmp/.gitkeep

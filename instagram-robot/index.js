@@ -4,7 +4,7 @@ const fs = require('fs');
 (async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto('https://instagram.com/rocketseat_oficial');
+  await page.goto('https://instagram.com/explore/tags/lojasrenner/');
 
   const imgList = await page.evaluate(() => {
     const nodeList = document.querySelectorAll('article img');
@@ -18,7 +18,7 @@ const fs = require('fs');
     return list;
   })
 
-  fs.writeFile('tmp/instagram.json', JSON.stringify(imgList, null, 2), err => {
+  fs.writeFile('../rennergram/tmp/instagram.json', JSON.stringify(imgList, null, 2), err => {
     if (err) {
       throw new Error('Something went wrong.');
     }
