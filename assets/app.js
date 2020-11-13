@@ -1,5 +1,5 @@
 (async () => {
-  const response = await fetch("../tmp/instagram.json");
+  const response = await fetch("./tmp/instagram.json");
   const data = await response.json();
 
   const htmlList = data
